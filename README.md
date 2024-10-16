@@ -3,6 +3,7 @@ Questa repo contiene la documentazione del gruppo Tech Minds del progetto di SWE
 ## Componenti del gruppo
 //TODO
 ## Struttura repo
+```
 .
 ├── assets/
 ├── candidatura/
@@ -16,5 +17,5 @@ Questa repo contiene la documentazione del gruppo Tech Minds del progetto di SWE
 │               ├── aaaa-mm-dd[-argomento].tex
 │               └── assets/
 └── template/
-
+```
 Albero delle cartelle creato con [https://tree.nathanfriend.com](https://tree.nathanfriend.com)
