@@ -1,0 +1,94 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage[italian]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black
+}
+
+\title{Verbale esterno del meeting in data 21/10/2024\\ \large{Incontro informativo con Zucchetti}}
+\author{Tech Minds \\ \href{mailto:techminds.unipd@gmail.com}{techminds.unipd@gmail.com}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{../../../../assets/logo.png}
+\end{figure}
+
+\tableofcontents{\newpage}
+
+\section{Durata e partecipanti}
+\subsection{Durata}
+\begin{itemize}
+  \item Inizio: 14:30
+  \item Fine: 15:25
+\end{itemize}
+\subsection{Partecipanti}
+\begin{itemize}
+    \item \textbf{Piccoli Gregorio} (Zucchetti)
+    \item Lazzarin Tommaso
+    \item Salviato Leonardo
+    \item Vallotto Caterina
+    \item Tutino Giuseppe
+    \item Bressan Alessandro
+    \item Squarzoni Matteo
+\end{itemize}
+
+\section{Riassunto}
+\subsection{Introduzione}
+Verbale relativo all'incontro informativo con il referente del capitolato ArtificialQI proposto dall'azienda Zucchetti.
+L'incontro si è tenuto sulla piattaforma Google Meet previo accordo tramite mail. \\
+Oltre alle domande si è discusso anche dello stato attuale degli LLM e delle metodologie utilizzate per valutarli. Sono state mostrate anche varie risorse da consultare riguardanti l'argomento trattato (tra cui LM Studio\footnote{\url{https://lmstudio.ai/}}).
+\subsection{Domande e risposte}
+Di seguito sono riportate le domande poste al proponente con un riassunto delle relative risposte.
+\begin{enumerate}
+    \item \textbf{Come verrebbe organizzata la supervisione dell'avanzamento del progetto da parte del proponente?}\\
+        Oltre agli incontri in corrispondenza delle valutazioni dei docenti, l'azienda si rende disponibile a colloqui sia in presenza che da remoto per eventuali dubbi o correzioni.
+    \item \textbf{Le domande dovranno riguardare argomenti specifici?}\\
+        Le domande e le relative risposte saranno fornite dall'utilizzatore del sistema. Durante la fase di sviluppo le domande potranno essere scelte liberamente dal gruppo.
+    \item \textbf{Ci sono delle tecnologie che consigliate per realizzare l'interfaccia utente?}\\
+        Non proponiamo l'uso di tecnologie specifiche ma suggeriamo fortemente di usare framework o librerie ampiamente diffuse (come React o Svelte) per evitare rallentamenti e problemi di incompatibilità.
+    \item \textbf{Abbiamo a disposizione delle infrastrutture cloud (AWS, Azure, ecc.)?}\\
+        Il progetto non prevede la messa in produzione dell'applicazione quindi non è necessario avere infrastrutture a disposizione. 
+        Tuttavia l'azienda mette a disposizione delle macchine su cui far girare i modelli da testare su richiesta del gruppo.
+    \item \textbf{Nel caso in cui per la valutazione si usi un LLM\footnote{Large Language Model} di capacità superiore, questo LLM deve essere prestabilito o si lascia la possibilità di scelta ad ogni esecuzione?}\\
+        A differenza dei progetti che si trovano in rete, che usano un LLM considerato di capacità superiore per valutare le risposte, il progetto verte sul confronto tra la risposta ricevuta e la risposta attesa fornita dall'utente.
+    \item \textbf{Due risposte diverse ma comunque giudicate corrette possono contribuire con un punteggio diverso alla valutazione del modello testato oppure il punteggio sarà sempre uguale se la risposta viene giudicata corretta?}\\
+        Sarà compito del gruppo scegliere come implementare l'algoritmo di valutazione.
+    \item \textbf{Nel caso di uso di un'altra LLM per la valutazione delle risposte, come si pensa di gestire le allucinazioni e le risposte che contengano informazioni aggiuntive?}\\
+        Dato che la valutazione verte sul confronto tra due risposte da parte del LLM giudicante, le allucinazioni risultano meno frequenti rispetto ad una valutazione diretta della risposta. In ogni caso è possibile modificare il parametro della temperatura per cercare di ridurre questo problema.
+\end{enumerate}
+
+\section{Changelog}
+\begin{tabularx}{0.8\textwidth} {
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X | }
+ \hline
+ \textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} \\
+ \hline
+ 1.0 & 21/10/2024 & Prima versione & Il gruppo Tech Minds\\
+\hline
+\end{tabularx}
+\\ \\ 
+\begin{flushright}
+    \textbf{Il proponente},  % Nome della persona che firma
+    Gregorio Piccoli \\
+    \vspace{0.5cm}
+    \begin{tikzpicture}
+        \draw (0,0) -- (5,0);
+    \end{tikzpicture}
+\end{flushright}
+
+\end{document}
