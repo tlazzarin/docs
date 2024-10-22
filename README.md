@@ -9,7 +9,7 @@ Questa repo contiene la documentazione del gruppo Tech Minds del progetto di SWE
 | Leonardo   | Salviato  | [@leosalvi03](https://github.com/leosalvi03)     |
 | Matteo     | Squarzoni | [@MatteoSquarz](https://github.com/MatteoSquarz) |
 | Giuseppe   | Tutino    | [@Giuseppe5000](https://github.com/Giuseppe5000) |
-| Caterina   | Vallotto  | [cvallott](https://github.com/cvallott)          |
+| Caterina   | Vallotto  | [@cvallott](https://github.com/cvallott)          |
 
 
 ## Struttura repo
