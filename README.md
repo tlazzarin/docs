@@ -16,7 +16,7 @@ Questa repo contiene la documentazione del gruppo Tech Minds del progetto di SWE
 ```
 .
 ├── assets/
-├── temaplate/
+├── template/
 └── candidatura/
     ├── documenti_esterni/
     │   ├── verbali/
