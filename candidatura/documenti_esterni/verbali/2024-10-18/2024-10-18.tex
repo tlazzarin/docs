@@ -1,0 +1,102 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage[italian]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black
+}
+
+\title{Verbale esterno del meeting in data 18/10/2024\\ \large{Incontro informativo con Sanmarco Informatica}}
+\author{Tech Minds \\ \href{mailto:techminds.unipd@gmail.com}{techminds.unipd@gmail.com}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\linewidth]{../../../../assets/logo.png}
+\end{figure}
+
+\tableofcontents{\newpage}
+
+\section{Durata e partecipanti}
+\subsection{Durata}
+\begin{itemize}
+  \item Inizio: 16:30
+  \item Fine: 17:00
+\end{itemize}
+\subsection{Partecipanti}
+\begin{itemize}
+    \item \textbf{Beggiato Alex} (Sanmarco Informatica)
+    \item Lazzarin Tommaso
+    \item Salviato Leonardo
+    \item Vallotto Caterina
+    \item Tutino Giuseppe
+    \item Bressan Alessandro
+    \item Corradin Samuele
+\end{itemize}
+
+\section{Riassunto}
+\subsection{Introduzione}
+Verbale relativo all'incontro informativo con il referente del capitolato 3Dataviz proposto dall'azienda Sanmarco Informatica.
+L'incontro si è tenuto sulla piattaforma Google Meet previo accordo tramite mail.
+
+\subsection{Domande e risposte}
+Di seguito sono riportate le domande poste al proponente con un riassunto delle relative risposte.
+\begin{enumerate}
+    \item \textbf{In che modo l'azienda supporterà il gruppo durante lo svolgimento del progetto?} \\
+        Le modalità specifiche di supporto verranno concordate una volta aggiudicato il capitolato. 
+        Sicuramente l'azienda fornirà un supporto maggiore nelle fasi di analisi dei requisiti e progettazione; durante la fase di implementazione sarà disponibile per dei chiarimenti su eventuali difficoltà. Verranno fissati degli incontri periodici per monitorare l'avanzamento del progetto.
+    \item \textbf{L'azienda mette a disposizione infrastrutture cloud utili per contenere l'applicativo web ed eventuali dati?} \\
+            L'azienda ritiene che non sia necessario fornire tali infrastrutture dato che esistono varie alternative gratuite sul web.
+    \item \textbf{La struttura di presentazione della pagina in che modo sarà composta? Oltre al grafico 3D e all'eventuale tabella dei dati cos'altro potrebbe essere necessario visualizzare?}\\
+        È necessario implementare la vista tabulare dei dati come requisito obbligatorio. Opzionalmente è possibile implementare l'interazione tra tabella e grafico in modo consistente.
+    \item \textbf{Gli istogrammi possono assumere valori negativi? Se sì, si richiede la navigazione tra gli istogrammi a 360°? }\\
+        Si, i valori negativi sono ammissibili ed è necessaria una libera navigazione del grafico.
+    \item \textbf{Il sito deve essere pensato anche per uso mobile?} \\
+        Non è una richiesta presente nei requisiti obbligatori. Tuttavia, utilizzando le tecnologie proposte adattare la webapp anche su mobile non richiede un grande impegno.
+    \item \textbf{Sarà necessario inserire anche delle funzioni di personalizzazione (per esempio set di colori, o determinati dati da ‘escludere’) da parte dell’utente?} \\
+        La personalizzazione dell'interfaccia non è necessaria ma opzionale.
+    \item \textbf{Il sito deve essere testato per funzionare sulla maggior parte dei browser attuali oppure ha un target particolare?} \\
+        Viste le tecnologie utilizzate la webapp sarà automaticamente compatibile con tutti i browser moderni.
+    \item \textbf{Si deve anche tenere conto delle sessioni utente/profili registrati in modo da salvare questi istogrammi in file progetto condivisibili/scaricabili?} \\
+        Sarebbe preferibile avere un welcome screen in cui è possibile scegliere il dataset da visualizzare. Non è richiesto l'uso di account.
+    \item \textbf{L’utente può influenzare il database (aggiungere dati)?} \\
+        La webapp si occupa solo della visualizzazione dei dati, non della loro modifica.
+    \item \textbf{Ci sono dei limiti alla quantità di dati rappresentabili?} \\
+        I limiti verranno decisi durante l'analisi dei requisiti. In ogni caso è fortemente consigliato scegliere un limite superiore adeguato.
+    \item \textbf{Qual è una caratteristica che un gruppo dovrebbe avere per realizzare un buon prodotto?}\\
+        Avere un pizzico di fantasia per rendere il prodotto più riconoscibile e incuriosire l'utente.
+\end{enumerate}
+
+\section{Changelog}
+\begin{tabularx}{0.8\textwidth} {
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X | }
+ \hline
+ \textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} \\
+ \hline
+ 1.0 & 18/10/2024 & Prima versione & Il gruppo Tech Minds\\
+\hline
+\end{tabularx}
+\\ \\ 
+\begin{flushright}
+    \textbf{Il proponente},  % Nome della persona che firma
+    Alex Beggiato \\
+    \vspace{0.5cm}
+    \begin{tikzpicture}
+        \draw (0,0) -- (5,0);
+    \end{tikzpicture}
+\end{flushright}
+
+\end{document}

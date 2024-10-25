@@ -1,0 +1,91 @@
+\documentclass[10pt]{article}
+\usepackage{graphicx}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{helvet}
+\usepackage{hyperref}
+\usepackage[italian]{babel}
+\usepackage{tabularx}
+\usepackage{tikz}
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black
+}
+
+\title{Verbale esterno del meeting in data 24/10/2024\\ \large{Incontro informativo con Var Group}}
+
+\author{Tech Minds \\ \href{mailto:techminds.unipd@gmail.com}{techminds.unipd@gmail.com}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\linewidth]{../../../../assets/logo.png}
+\end{figure}
+
+\tableofcontents{\newpage}
+
+\section{Durata e partecipanti}
+\subsection{Durata}
+\begin{itemize}
+  \item Inizio: 17:00
+  \item Fine: 17:35
+\end{itemize}
+\subsection{Partecipanti}
+\begin{itemize}
+    \item \textbf{Stefano Dindo} (Var Group)
+    \item Lazzarin Tommaso
+    \item Corradin Samuele
+    \item Salviato Leonardo
+    \item Vallotto Caterina
+    \item Tutino Giuseppe
+    \item Bressan Alessandro
+    \item Squarzoni Matteo
+\end{itemize}
+
+\section{Riassunto}
+\subsection{Introduzione}
+Verbale relativo all'incontro informativo con il referente del capitolato C3 proposto dall'azienda Var Group.
+L'incontro si è tenuto sulla piattaforma Google Meet previo accordo tramite mail. \\
+\subsection{Domande e risposte}
+\begin{enumerate}
+    \item \textbf{Nella presentazione è citato React per le interfacce web, in che modo potrebbe essere utile un quando si dispone già di un client nativo?} \\
+    È stato fatto per dare una scelta più vasta al gruppo nel caso conoscesse già le varie tecnologie web.
+    \item \textbf{Cosa succede se l'utente richiede un'automazione non prevista dai blocchi definiti?} \\
+    In quel caso l'applicazione dovrebbe avvisare l'utente che tale automazione non è definita.
+    \item \textbf{Come fa il LLM a capire ciò che chiede l'utente?}\\
+    Il Large Language Model verrà addestrato sulle API disponibili prima della sua invocazione.
+    \item \textbf{Dato che gli step del workflow sono in linguaggio naturale e il software deve creare la logica di automazione, si dovrebbe far generare del codice al LLM (con delle indicazioni precise e delle funzioni limitate a disposizione) per poi eseguirlo?}\\
+    Il LLM andrà a generare del codice e sarà compito del gruppo trovare un modo per verificare che il codice generato sia corretto.
+    \item \textbf{Ha citato N8N, in che modo dovremmo ispirarci per il progetto?}\\
+    In questo progetto la lista delle funzionalità delle varie applicazioni è nascosta all'utente e si predilige un'interazione attraverso il linguaggio naturale. In ogni caso questo progetto è stato fornito per dare l'idea di come realizzare l'interfaccia.
+    \item \textbf{In che modo l'azienda darà supporto al gruppo?}\\
+    Sarà organizzata una sessione di design thinking in presenza e verrà fornita una formazione sulle tecnologie utilizzate. Verranno inoltre organizzati degli incontri periodici per verificare l'avanzamento e lo stato del progetto.
+    \item \textbf{È la prima volta che partecipate a questa iniziativa o siete già stati proponenti in passato?}\\
+    La nostra azienda collabora già da molto tempo con l'università.
+\end{enumerate}
+\section{Changelog}
+\begin{tabularx}{0.8\textwidth} {
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\centering\arraybackslash}X | }
+ \hline
+ \textbf{Versione} & \textbf{Data} & \textbf{Descrizione} & \textbf{Autore} \\
+ \hline
+ 1.0 & 24/10/2024 & Prima versione & Lazzarin Tommaso\\
+\hline
+\end{tabularx}
+\\ \\ 
+\begin{flushright}
+    \textbf{Il proponente},  % Nome della persona che firma
+    Stefano Dindo \\
+    \vspace{0.5cm}
+    \begin{tikzpicture}
+        \draw (0,0) -- (5,0);
+    \end{tikzpicture}
+\end{flushright}
+\end{document}

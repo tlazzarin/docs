@@ -1,1 +1,0 @@
-file creato per poter caricare la cartella, da cancellare quando ci saranno file utili
