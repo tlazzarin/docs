@@ -3,10 +3,6 @@ import subprocess
 import os
 
 repo_dir = os.environ['GITHUB_WORKSPACE']
-subprocess.run(["ls", "-lh", repo_dir])
-print("-----")
-subprocess.run(["ls", "-lh", repo_dir+"/.."])
-exit(1)
 
 sources = glob.glob("{}/**/*.tex".format(repo_dir), recursive=True)
 
